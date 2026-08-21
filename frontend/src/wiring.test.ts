@@ -11,7 +11,7 @@ describe("Shitty terminal plugin wiring", () => {
     activate({ app, subscriptions: [] });
     expect(activateProvider).toHaveBeenCalledWith(app, [], {
       pluginId: "soksak-plugin-terminal-shitty", engineId: "shitty",
-      providerUnit: "terminal-shitty", programId: "terminal-shitty",
+      providerSidecar: "terminal-shitty", programId: "terminal-shitty",
     });
   });
 });
