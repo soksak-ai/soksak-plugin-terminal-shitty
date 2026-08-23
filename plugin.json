@@ -1,10 +1,10 @@
 {
   "id": "soksak-plugin-terminal-shitty",
-  "name": { "en": "Shitty Terminal", "ko": "Shitty 터미널" }, "version": "0.0.12",
+  "name": { "en": "Shitty Terminal", "ko": "Shitty 터미널" }, "version": "0.0.13",
   "appVersionRequirement": "0.0.1",
   "description": { "en": "Terminal view rendered from the shitty provider frame.", "ko": "Shitty 공급자 프레임을 렌더링하는 터미널 뷰입니다." },
   "entry": "main.js", "permissions": ["ui", "ui:statusbar", "commands", "programs", "sidecar", "secrets", "terminal"],
-  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.3" }],
+  "implements": [{ "id": "soksak-spec-plugin-terminal", "version": "0.0.4" }],
   "contributes": {
     "commands": [
       { "name": "status", "title": { "en": "Terminal status", "ko": "터미널 상태" } },
@@ -23,7 +23,7 @@
   "runtimeDependencies": {
     "sidecars": [
       { "id": "soksak-sidecar-pty", "version": "0.0.6", "url": "https://github.com/soksak-ai/soksak-sidecar-pty/releases/download/v0.0.6/release.json", "size": 2996, "sha256": "32e05911074b381222cbcac6004c76c93e73c9fe967df57b649af5abb5c69c40" },
-      { "id": "soksak-sidecar-terminal-shitty", "version": "0.0.7", "url": "https://github.com/soksak-ai/soksak-sidecar-terminal-shitty/releases/download/v0.0.7/release.json", "size": 2794, "sha256": "d6dccee37e58019df4a7f40b20c30abfa4830f07fc4492de9ba5c1b9d13aaddc" }
+      { "id": "soksak-sidecar-terminal-shitty", "version": "0.0.8", "url": "https://github.com/soksak-ai/soksak-sidecar-terminal-shitty/releases/download/v0.0.8/release.json", "size": 2794, "sha256": "f612364def7b03afa678400a42127cb81939a1e5042e9525b9d471f093792139" }
     ]
   }
 }
