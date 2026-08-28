@@ -11,7 +11,7 @@ describe("terminal plugin manifest contract", () => {
     expect(manifest.implements).toEqual([TERMINAL_PLUGIN_CONTRACT]);
     expect(manifest.runtimeDependencies.sidecars).toEqual([
       { id: "soksak-sidecar-pty", version: "0.0.13" },
-      { id: "soksak-sidecar-terminal-shitty", version: "0.0.17" },
+      { id: "soksak-sidecar-terminal-shitty", version: "0.0.18" },
     ]);
     // A manifest dependency is intent: {id, version}. The release document carries the facts (size, sha256).
     for (const sidecar of manifest.runtimeDependencies.sidecars) expect(sidecar).toEqual({ id: expect.stringMatching(/^soksak-sidecar-[a-z0-9-]+$/), version: expect.stringMatching(/^(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)\.(?:0|[1-9][0-9]*)$/) });
